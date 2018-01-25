@@ -47,6 +47,6 @@ resource "azurerm_postgresql_firewall_rule" "test" {
   name                = "AllowJumpbox"
   resource_group_name = "${azurerm_resource_group.test.name}"
   server_name         = "${azurerm_postgresql_server.test.name}"
-  start_ip_address    = "10.0.17.62"
-  end_ip_address      = "10.0.17.62"
+  start_ip_address    = "99.0.99.0"
+  end_ip_address      = "99.0.99.0"
 }
